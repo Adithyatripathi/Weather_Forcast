@@ -6,7 +6,8 @@ async function updateWeather(city) {
     if (!city) return;
     
     const [lat, lon] = citylist[city];
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}&aqi=no`;
+
     
     try {
         const response = await fetch(url);
