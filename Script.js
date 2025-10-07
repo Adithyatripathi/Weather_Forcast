@@ -1,5 +1,5 @@
 
-const apiKey = 'Your PASs KEY';
+const apiKey = '5a83997651d0474787c84317250303';
 
 
 async function updateWeather(city) {
