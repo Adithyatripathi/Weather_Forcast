@@ -1,4 +1,4 @@
-// City list with coordinates
+// Script1.js  (city list) -- replace your existing citylist file with this (keeps same list)
 const citylist = {
     "Tokyo": [35.682839, 139.759455],
     "Delhi": [28.7041, 77.1025],
@@ -75,9 +75,10 @@ const citylist = {
     "Warangal": [17.9784, 79.5910]
 };
 
-// Populate the cities dropdown
+// populate dropdown
 const citiesSelect = document.getElementById('cities');
-citiesSelect.innerHTML = `<option value=\"\">Select a city</option>`;
+citiesSelect.innerHTML = `<option value="">Select a city</option>`;
 for (let city in citylist) {
-    citiesSelect.innerHTML += `<option value=\"${city}\">${city}</option>`;
+    const safeCity = city.replace(/"/g, '&quot;');
+    citiesSelect.innerHTML += `<option value="${safeCity}">${city}</option>`;
 }
