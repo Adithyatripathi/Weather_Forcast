@@ -1,5 +1,5 @@
 // Script.js  (main logic) - replace your existing Script.js
-const apiKey = '5a83997651d0474787c84317250303'; // keep your key
+const apiKey = 'Your API'; // keep your key
 
 // helpers
 function formatDate(timestamp) {
